@@ -21,7 +21,6 @@ export const getServerSideProps = async (
 export default function Page({
   movies,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  console.log(movies);
   return (
     <div className={style.search_container}>
       {movies.map((movie) => (
